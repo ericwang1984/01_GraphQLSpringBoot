@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class BankAccountResolver implements GraphQLQueryResolver {
 
   public BankAccount bankAccount(UUID id){
-    log.info("rertieve bank account ,id {}",id);
+    log.info("retrieve bank account ,id {}",id);
 
     BankAccount account = BankAccount.builder().id(id).name("user1").currency(Currency.RMB).build();
     return account;
