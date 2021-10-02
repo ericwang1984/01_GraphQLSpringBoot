@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: graphql-springboot-sample
+
+server:
+  http2:
+    enabled: true
+
+#graphql:
+#  servlet:
+#    maxQueryDepth: 64 # 暂改成64，否则voyager不work
+#    exception-handlers-enabled: false
+#  playground:
+##    enabled: false
+#    headers:
+#      Authorization: Bearer TOKEN_XYZ
+#    tabs:
+#      - name: Bank Account Sample Query
+#        query: classpath:playground/bank_account.graphql
+#        variables: classpath:playground/bank_account_variables.json
+
+#voyager:
+#  enabled: false
