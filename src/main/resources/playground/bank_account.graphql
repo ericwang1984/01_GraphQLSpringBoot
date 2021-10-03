@@ -8,3 +8,6 @@ query GET_BANK_ACCOUNT($id: ID) {
         }
     }
 }
+
+
+
