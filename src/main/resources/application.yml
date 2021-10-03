@@ -6,18 +6,19 @@ server:
   http2:
     enabled: true
 
-#graphql:
-#  servlet:
-#    maxQueryDepth: 64 # 暂改成64，否则voyager不work
+graphql:
+  servlet:
+#    maxQueryDepth: 6
+    maxQueryDepth: 64 # 暂改成64，否则voyager不work
 #    exception-handlers-enabled: false
-#  playground:
+  playground:
 ##    enabled: false
-#    headers:
-#      Authorization: Bearer TOKEN_XYZ
-#    tabs:
-#      - name: Bank Account Sample Query
-#        query: classpath:playground/bank_account.graphql
-#        variables: classpath:playground/bank_account_variables.json
+    headers:
+      Authorization: Bearer TOKEN_XYZ
+    tabs:
+      - name: Bank Account Sample Query
+        query: classpath:playground/bank_account.graphql
+        variables: classpath:playground/bank_account_variables.json
 
 #voyager:
 #  enabled: false
