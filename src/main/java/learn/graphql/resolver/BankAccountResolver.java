@@ -15,8 +15,7 @@ public class BankAccountResolver implements GraphQLQueryResolver {
   public BankAccount bankAccount(UUID id){
     log.info("retrieve bank account ,id {}",id);
 
-    Client clientA = Client.builder().id(UUID.randomUUID()).firstName("eric").lastName("wang").build();
-    BankAccount account = BankAccount.builder().id(id).client(clientA).currency(Currency.RMB).build();
+    BankAccount account = BankAccount.builder().id(id).currency(Currency.RMB).build();
     return account;
   }
 
