@@ -4,7 +4,7 @@ import graphql.GraphQLException;
 import graphql.kickstart.spring.error.ThrowableGraphQLError;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-
+//会根据application.yml中的设置，来启用
 @Component
 public class SpringGraphQLExceptionHandler {
 

@@ -9,8 +9,8 @@ server:
 graphql:
   servlet:
 #    maxQueryDepth: 6
-    maxQueryDepth: 64 # 暂改成64，否则voyager不work
-    exception-handlers-enabled: true #启用spring exception handle
+    maxQueryDepth: 32 # 暂改成32，否则voyager不work
+    exception-handlers-enabled: false # ture启用spring exception handle
   playground:
     enabled: true
     headers:
