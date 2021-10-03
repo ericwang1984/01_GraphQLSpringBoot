@@ -8,7 +8,7 @@ import learn.graphql.domain.BankAccount;
 import learn.graphql.domain.Client;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-
+//DataFetcherResult Resolvers
 @Slf4j
 @Component
 public class ClientResolver implements GraphQLResolver<BankAccount> {

@@ -10,6 +10,7 @@ import learn.graphql.domain.Asset;
 import learn.graphql.domain.BankAccount;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+//Async Resolvers
 
 @Slf4j
 @Component
