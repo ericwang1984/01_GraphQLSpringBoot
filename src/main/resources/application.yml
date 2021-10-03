@@ -12,7 +12,7 @@ graphql:
     maxQueryDepth: 64 # 暂改成64，否则voyager不work
 #    exception-handlers-enabled: false
   playground:
-##    enabled: false
+    enabled: true
     headers:
       Authorization: Bearer TOKEN_XYZ
     tabs:
@@ -20,5 +20,5 @@ graphql:
         query: classpath:playground/bank_account.graphql
         variables: classpath:playground/bank_account_variables.json
 
-#voyager:
-#  enabled: false
+voyager:
+  enabled: true
